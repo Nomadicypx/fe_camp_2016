@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+    <title>text1</title>
+    <link rel="stylesheet"href="../css/text1.css">
+
+</head>
+<body>
+    
+       <div class="login">
+           <div class="login-header">
+            <h1>登录界面</h1>
+           </div>
+           <div class="login-content">
+             <label for="usename">用户名</label>
+             <input type="text" id="usename" placeholder="请输入用户名"><br />
+             <label for="password">密&nbsp;&nbsp;码</label>
+             <input type="password" id="password" placeholder="请输入密码"><br />
+             <button id="button">登录</button>
+       </div>
+       </div>
+<script>
+    var btn = document.getElementById("button");
+    btn.onclick = function () {
+        alert("登录成功");
+    }
+</script>
+</body>
+</html>
