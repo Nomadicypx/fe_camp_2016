@@ -75,7 +75,7 @@
 			font-size: 30px;
 			margin-bottom: 20px;
 		}
-		pre{
+		article p{
 			font-size: 20px;
 		}
 		section div{
@@ -96,6 +96,8 @@
 	    nav{
 	    	padding: 0;
 	    	background-color: #ccccff;
+	    	display: flex;
+	    	flex-direction: column;
 	    }
 	    .person{
 	    	display: block;
@@ -106,11 +108,12 @@
 	    
 		nav a{
 			display: block;
-			margin-left: 40%;
+			flex: 1;
 			cursor: pointer;
 			color:white;
 			font-size: 30px;
-			margin-bottom: 10px;
+			text-align: center;
+			margin:10px auto;
 		}
 		section div article{
 			word-wrap: break-word;
@@ -118,6 +121,13 @@
 		.photo{
 			display: none;
 		}
+		.close{
+			position:relative;
+			left: 260px;
+			top: -30px;
+			cursor: pointer;
+		}
+		
 		}	
 	</style>
 
@@ -150,29 +160,30 @@
 			<div>
 				<article >
 					<h2><a name ="C1"></a><span>&nbsp </span> &nbsp实习经验：</h2>
-					<pre>无（哈哈哈哈...额...）</pre>
+					<p>无（哈哈哈哈...额...）</p>
 				</article>
 			</div>	
 			<hr>
 			<div>
 				<article>
 					<h2><a name ="C2"></a><span>&nbsp </span> &nbsp自我评价：</h2>
-					<pre >性格开朗，经常会变成豆比.....<br>做事容易专注但是也容易钻牛角尖。<br>人不是很勤奋，但也积极主动。
-					</pre>
+					<p >性格开朗，经常会变成豆比.....做事容易专注但是也容易钻牛角尖。人不是很勤奋，但也积极主动。
+					</p>
 				</article>
 			</div>
 			<hr>
 			<div>
 				<article >
 					<h2><a name ="C3"></a><span>&nbsp </span>&nbsp 学习html目的：</h2>	
-					<pre>丰富自己的课余生活，提高自身的素养</pre>
+					<p>丰富自己的课余生活，提高自身的素养</p>
 				</article>
 			</div>
 		</section>
 	</div>
 	<div class="person">
-		<figure>
+		<figure onclick="this.parentNode.style.display='none'">
 			<img src="image/person.gif" alt="动漫人物">
+			<div class="close">关闭</div>
 		</figure>
 	</div>
 </body>

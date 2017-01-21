@@ -1,55 +1,61 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8" />
-	<title>imitation</title>
+	<meta charset="UTF-8">
+	<title>imitaion</title>
 	<style>
-	
 	body {
 	background-color: silver;
-	font-family: sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
 	text-align: left;
 	line-height: 2em;
 	color: #3a3a3a;		
 	}
-
 	a, a:visited, a:hover {
 	color: #318ec3;
 	text-decoration: none;
+	outline: 0;
+	transition: color 0.4s ease;
 	}
-
 	a:hover {
 	color: #3a3a3a;
 	}
-
 	.button_primary a {
 	display: block;
 	width: 200px;
 	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 	background-color: rgba(255, 255, 255, .25);
 	text-align: center;
 	text-decoration: none;
 	padding: .625em 3em .625em 3em;
-	font-family:sans-serif;
+	font-family: sans-serif;
 	font-size: .875em;
 	font-weight: 400;
+	text-transform: uppercase;
 	color: #fff;
 	margin: 0 auto;
 	outline: 0;
+	transition: background-color 0.4s ease;
 	}
 
 	.button_primary a:hover {
 	background-color: rgba(255, 255, 255, .4);
 	}
-		
+
 	.feature {
 	background: #999 url("image/background1.jpg") no-repeat center center;
 	background-size: cover;
+	background-attachment: fixed;
 	height: 1330px; height: 83.125rem;
 	margin: 0; 	
 	position: relative;
+	}
+
+	.ifpospwb {
+	opacity: 1;
 	}
 
 	.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
@@ -57,8 +63,19 @@
 	margin-bottom: 0;
 	}
 
-	
+	#logo h1 a {
+	display: block;
+	float: left;
+	position: absolute;
+	top: 35px; top: 2.1875rem;
+	text-indent: -9999px;
+	background: url("image/icon1.gif") no-repeat;
+	width: 32px;
+	height: 26px;
+	transition: 0.4s ease;
+	}
 
+	
 	nav {
 	width: 100%;
 	float: left;
@@ -69,34 +86,38 @@
 	display: inline-block;
 	float: right;
 	}
-	
+
 	nav ul li {
 	list-style: none;
 	float: right;
 	margin: 30px 0 30px 50px; margin: 1.875rem 0 1.875rem 3.125rem;
-	font-family: sans-serif;
+	font-family:sans-serif;
 	font-size: .8125em;
 	font-weight: 400;
+	text-transform: uppercase;
 	}
-	
+
 	nav ul li a,
 	nav ul li a:hover,
 	nav ul li a:visited {
 	color: #fff;
 	text-decoration: none;
-	}
-	
-	nav ul li a:hover {
-	opacity:0.5;
+	transition: 0.2s ease;
 	}
 
-	.headline {
+	nav ul li a:hover {
+	opacity: .5;
+	}
+
+	.headline,
+	.error {
 	display: table-cell;
 	vertical-align: middle;
-	font-family:sans-serif;
+	font-family: sans-serif;
 	font-size: 18em;
 	line-height: .9em;
 	letter-spacing: .05em;
+	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
 	position: absolute; 
@@ -107,12 +128,13 @@
 
 	h2 {
 	margin-bottom: 30px; margin-bottom: 1.875rem;
-	font-family: sans-serif;
+	font-family:  sans-serif;
 	font-size: 3.25em;
 	font-weight: normal;
 	line-height: 1.2em;
 	color: #fff;
 	text-align: center;
+	text-transform: uppercase;
 	}
 
 	.who {
@@ -125,14 +147,14 @@
 	padding: 120px 0 120px 0;	padding: 7.5rem 0 7.5rem 0;
 	text-align: center;
 	}
-	
+
 	.who .eightcol {
-	font-family: serif;
+	font-family:  serif;
 	font-size: 1.2em;
 	line-height: 2em;
 	font-weight: 300;
 	}
-	
+
 	.who h2 {
 	color: #bebebe;
 	}
@@ -140,27 +162,47 @@
 	.how {
 	background: #0d0d0d url("image/background3.jpg") no-repeat center center;
 	background-size: cover;
+	background-attachment: fixed;
 	margin: 0; 	
 	}
 
 	.how .row {
-	padding: 9.375rem 0 9.0625rem 0;
+	padding: 150px 0 145px 0; padding: 9.375rem 0 9.0625rem 0;
 	}
+
+	.how .research {
+	background: url("image/icon2.png") no-repeat center center;
+	background-size: 7%;
 	
+	}
+
+	.how .design {
+	background: url("image/icon3.png") no-repeat center center;
+	background-size: 7%;
+
+	}
+
+	.how .iterate {
+	background: url("image/icon4.png") no-repeat center center;
+	background-size: 7%;
+
+
+	}
+
 	.how h2 {
 	text-align: center;
 	color: #fff;
 	}
-	
+
 	.how h3 {
-	font-family:serif;
+	font-family:  serif;
 	font-size: 1.5em;
 	font-weight: 300;
 	text-align: center;
 	margin: 180px 0 20px 0;	margin: 11.25rem 0 1.25rem 0;
 	color: #fff;
 	}
-	
+
 	.how p {
 	font-family:sans-serif;
 	font-size: .875em;
@@ -191,11 +233,11 @@
 	text-align: center;
 	}
 
-		.work .twelvecol img {
-		width: 82.7%;
-		margin-bottom: 40px;
-		margin-bottom: 2.5rem;
-		}
+	.work .twelvecol img {
+	width: 82.7%;
+	margin-bottom: 40px;
+	margin-bottom: 2.5rem;
+	}
 
 	.work h2 {
 	text-align: center;
@@ -203,7 +245,7 @@
 	}
 
 	.work h3 {
-	font-family:serif;
+	font-family:  serif;
 	font-size: 1.5em;
 	font-weight: 300;
 	text-align: center;
@@ -225,9 +267,11 @@
 
 	p.metadata {
 	text-align: center;
-	font-family: sans-serif;
+	font-family:sans-serif;
 	font-size: .75em;
 	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .02em;
 	color: #cbcbcb;
 	margin-bottom: 20px;
 	}
@@ -239,17 +283,17 @@
 	.contact .row {
 	padding: 240px 0 240px 0; padding: 15rem 0 15rem 0;
 	}
-	
+
 	.contact h2 {
 	margin-bottom: 20px;
 	}
 
 	.footer {
 	height: 100px; height: 6.25rem;
-	background: #272727 ;
-	font-family:sans-serif;
+	font-family: sans-serif;
 	font-size: .8125em;
 	font-weight: 400;
+	text-transform: uppercase;
 	line-height: 100px; line-height: 6.25rem;
 	color: #333;
 	text-align: center;
@@ -258,16 +302,219 @@
 	.footer a {
 	text-decoration: none;
 	color: #333;
+	transition: color 0.2s ease;
 	}
 
 	.footer a:hover {
 	color: #318ec3;
 	}
+
+
 	
+	
+	@media handheld, only screen and (max-width: 768px) {
+
+	h2 {
+	font-size: 2.5em;
+	}
+
+	.button_primary a {
+	width: inherit;
+	}
+
+	.feature {
+	background: #999 url("image/background1.jpg") no-repeat center center; 
+	background-size: cover;
+	background-attachment: scroll;	 	
+	height: 510px; height: 31.875rem;
+	margin: 0; 	 	
+	}
+
+	#logo h1 a {
+	display: block;
+	float: left;
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	background: url("image/icon1.gif") no-repeat;
+	background-size: 50%;
+	margin: 0 auto 0 auto;
+	}
+
+	
+	nav ul li {
+	font-size: .625em;
+	margin: 15px;
+	}
+
+	.headline,
+	.error {
+	height: 430px; height: 26.875rem;
+	font-size: 4em;
+	line-height: 1em;
+	
+	}
+
+	.who {
+	background-position: left;
+	background-position-x: -42px;
+	background-position-y: 39px;
+	}
+
+	.who .row {
+	padding: 50px 0 50px 0;
+	
+	}
+
+	.who p {
+	padding: 0;
+	font-size: .75em;
+	}
+
+	.how {
+	background: #999 url("image/background2.jpg") no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 100%;
+	margin: 0; 	 	
+	}
+
+	.how .row {
+	padding: 50px 0 0 0; padding: 3.125rem 0 0 0;
+	}	
+
+	.how .research, 
+	.how .design,
+	.how .iterate {
+	background-position-y: 20px;
+	padding-top: 180px; padding-top: 11.25rem;
+	padding-bottom: 40px; padding-bottom: 2.5rem;
+	border-bottom: 1px dotted rgba(255, 255, 255, .15);
+	}
+
+	.how .research {
+	background-position-y: 0;
+	padding-top: 155px; padding-top: 9.6875rem;
+	}
+
+	.how h2{
+	margin-bottom: 0;
+	}
+
+	.how h3 {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+	color: rgba(255, 255, 255, .9);
+	}
+
+	.how p {
+	margin: .5em 0 .5em 0;
+	}
+
+	.work {
+	height: 100%;
+	}
+
+	.work .row {
+	padding: 50px 0 0 0; padding: 3.125rem 0 0 0;
+	}	
+
+	.work .project,
+	.work .project1 {
+	padding: 50px 0 50px 0; padding: 2.5rem 0 2.5rem 0;
+	border-bottom: 1px dotted rgba(0, 0, 0, .15);
+	}
+
+	.work .project1 {
+	padding-top: 0;
+	}
+
+	.work .twelvecol img {
+	width: 82.7%;
+	margin-bottom: 20px; margin-bottom: 1.25rem;
+	}
+
+	
+	.work p {
+	margin: .5em 0 .5em 0;
+	}
+
+	.contact .row {
+	padding: 50px 0 100px 0; padding: 3.125rem 0 6.25rem 0;
+	}
+
+	.contact h2 {
+	font-size: 4em;
+	line-height: 1em;
+	margin: 1em 0 .5em 0;
+	color: #fff;
+	}
+
+	p.metadata {
+	margin-bottom: 20px; margin-bottom: 1.25rem;
+	}
+
+
+	}
+
+
+	.left {
+	float: left;
+	}
+
+	.right {
+	float: right;
+	}
+
+	.invisible {
+	display: none;
+	}
+
+	.ontop {
+	position: fixed;
+	z-index: 9999;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	pointer-events: none;
+	}
+
+	.grid {
+	background: rgba(204,0,255,.2);
+	height: 5000px;
+	}
 	</style>
 </head>
-
 <body>
+	<div class="container ontop invisible">
+	<div class="row">
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid">
+	</div>
+	<div class="onecol grid last">
+	</div>
+	</div>
+</div>
 
 <div class="container feature ">
 	<div class="row">	
@@ -296,6 +543,8 @@
 		<div class="eightcol">
 			<p>Im a designer at <a>Google</a>, where I work with a talented team of technologists to connect people and cultures across the world. Previously, I was a designer at <a>Huge</a>, where I helped brands such as Samsung, Vans, and TED design new products to meet peoples evolving digital lifestyles.</p>
 		</div>
+		<div class="twocol last">
+		</div>
 	</div>	
 </div>
 
@@ -304,15 +553,15 @@
 		<div class="twelvecol">
 			<h2>How I do it</h2>
 		</div>
-		<div >
+		<div class="fourcol research">
 			<h3>Research</h3>
 			<p>Understand the business and competitive landscape. Learn how people interact with the brand and product. Identify strategic opportunities and design goals.</p>
 		</div>
-		<div >
+		<div class="fourcol design">
 			<h3>Design</h3>
 			<p>Define and design the product. Combine smart interaction, interface, and visual design into a compelling product that resonates with the target audience.</p>
 		</div>
-		<div >
+		<div class="fourcol iterate last">
 			<h3>Refine</h3>
 			<p>Test concepts, designs, and prototypes with real users. Combine learnings with gut instinct and experience. Iterate and refine in pursuit of perfection.</p>
 		</div>
@@ -370,7 +619,5 @@
 		</div>
 	</div>
 </div>
-
 </body>
-
 </html>
